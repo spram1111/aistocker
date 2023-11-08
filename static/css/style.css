@@ -1,0 +1,270 @@
+
+        h1 {
+            text-transform: capitalize;
+            font-weight: bold;
+            margin: 0 0 40px 0;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h2, h3 {
+            text-transform: capitalize;
+            margin: 40px 0 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        h1:first-letter, h2:first-letter, h3:first-letter {
+            text-transform: capitalize;
+        }
+
+        h2.lang, h3.lang {
+            text-transform: lowercase;
+        }
+
+
+        h2 > a, h2 > a:hover, h2 > a:focus {
+            color: #333;
+        }
+
+        h2 > a:hover {
+            text-decoration: none;
+        }
+
+        #main {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        #top-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+        }
+        @media (min-width: 768px) {
+            .search-input {
+                width: 500px !important;
+            }
+        }
+
+        .shaped-form-extended-block-caption {
+            padding-left: 50px !important;
+        }
+
+        .pages-content {
+            max-width: 1920px;
+            padding: 35px;
+            margin: 0 auto;
+        }
+
+        .heading-container {
+            padding: 10px;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            text-align: center;
+            background-position: 50% 50%;
+            border-radius: 10px;
+        }
+
+        .thumbnails-grid {
+            margin-top: 30px
+        }
+
+        .thumbnails-grid h3 {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.4;
+            font-family: "Roboto", "Arial", "sans-serif";
+        }
+
+        .thumbnails-grid .one-row h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .thumbnail:hover:after {
+            cursor: zoom-in;
+        }
+
+        @media (max-width: 768px) {
+            .heading-container {
+                margin: 0 -15px;
+            }
+            .templates-block {
+                padding: 0 20px;
+            }
+        }
+
+        .heading-block {
+            color: #fff;
+            max-width: 630px;
+            display: inline-block;
+        }
+
+        .page-builder.heading-block {
+            max-width: 650px;
+        }
+
+        .heading-block form {
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .heading-description {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 20px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .builder-page.heading-description {
+            font-size: 16px;
+            width: 95%;
+        }
+
+        .heading-description a {
+            color: #fff;
+        }
+
+        .heading-description a:hover {
+            text-decoration: none;
+        }
+
+        .block-slider .thumbnail-slider-list a[data-title] {
+            padding: 31px 0 0;
+        }
+
+        .block-slider .thumbnail-slider-list a[data-title]:before {
+            font-size: 18px;
+            margin: -32px 0 0;
+        }
+
+        .gray-block {
+            background-color: #f7f7f7;
+            margin: 40px -35px 0 -35px;
+            padding: 1px 35px 20px 35px;
+        }
+
+        .custom-block.gray-block {
+            margin: 0 -35px;
+        }
+
+        .last-custom-block {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f7f7f7;
+            text-align: left;
+        }
+
+        .last-custom-block h2:first-child {
+            margin: 0 0 20px;
+        }
+        .last-custom-block h2:not(:first-child) {
+            margin: 30px 0 20px;
+        }
+
+        .last-custom-block p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .last-updated-block {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .auto-suggest-keyword .auto-suggest-link {
+            margin-left: 12px;
+        }
+
+        .ui-autocomplete-category {
+            background-color:rgb(247, 247, 247);
+            margin: 5px 0 !important;
+            padding: 5px 20px 5px 5px !important;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .custom-download-section p, .templates-block p {
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .custom-download-section.gray-block {
+            margin-bottom: -40px;
+        }
+
+        .templates-block.gray-block p {
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .search-form-container {
+            margin-bottom: 20px;
+        }
+
+        .search-form-container form {
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .keywords-slider-container .thumbnail-slider.keyword-slider {
+            max-width: 100%;
+            width: 100%;
+            margin: 20px 0 0;
+        }
+
+        .heading-container {
+            background-color: #53a865;
+            background-size: cover;
+        }
+
+        @media (min-width: 576px) and (max-width: 1281px) {
+            .heading-container {
+                background-image: url('//csite.nicepage.com/Images/Site/free-website-templates-1200.jpg?v=4');
+            }
+        }
+        @media (min-width: 1281px) and (max-width: 1700px) {
+            .heading-container {
+                background-image: url('//csite.nicepage.com/Images/Site/free-website-templates-1600.jpg?v=4');
+            }
+        }
+        @media (min-width: 1700px) {
+            .heading-container {
+                background-image: url('//csite.nicepage.com/Images/Site/free-website-templates-1920.jpg?v=4');
+            }
+        }
+
+        .search-btn {
+            background-image: url('//csite.nicepage.com/Images/Site/icon-input-search.png');
+        }
+
+

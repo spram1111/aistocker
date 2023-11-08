@@ -1,0 +1,69 @@
+{% load static %}
+<div class="wrap wrap-fluid">
+    <div id="top-navbar" class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand clearfix" href="{% url 'main:index' %}"><img class="pull-left" width="70" height="40" alt="Nicepage.com" src="{% static 'imgs/logo/logo2.png' %}" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="logon-block nav navbar-nav nav-list navbar-left u-unstyled" style="font-size: 14px;">
+            <li class="dropdown">
+              <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle template-menu-item" href="/ru/html-shablony">Категории
+                <span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu dropdown-menu-hover u-unstyled">
+                <li><a href="/ru/shablony-veb-saytov">Компьютерное зрение</a></li>
+                <li><a href="/website-design">Финансы</a></li>
+                <li><a href="/ru/wordpress-temy">Наука</a></li>
+                <li><a href="/ru/joomla-shablony">Машинный перевод</a></li>
+                <li><a href="/ru/html-shablony">Графика</a></li>
+              </ul>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="/blog">Блог</a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Help<span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu dropdown-menu-hover u-unstyled">
+                <li><a href="/doc">Документация</a></li>
+                <!--li><a href="/live-demo">Запланировать личную демонстрацию</a></li-->
+                <li><a href="/Forum/Topic/Create">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="logon-block nav navbar-nav nav-list navbar-right u-unstyled">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">RU <span class="caret"></span></a>
+              <ul class="dropdown-menu u-unstyled" role="menu">
+                <li><a href="/website-templates">EN</a></li>
+                <li><a href="/de/website-vorlagen">DE</a></li>
+                <li><a href="/nl/website-sjablonen">NL</a></li>
+                <li><a href="/fr/modeles-site">FR</a></li>
+                <li><a href="/it/modelli-web">IT</a></li>
+                <li><a href="/es/plantillas-web">ES</a></li>
+                <li><a href="/pl/szablony-internetowe">PL</a></li>
+                <li><a href="/pt/modelos-site">PT</a></li>
+                <li><a href="/tr/web-sitesi-sablonlari">TR</a></li>
+                <li><a href="/ru/shablony-veb-saytov">RU</a></li>
+                <li><a href="/hu/weboldal-sablonok">HU</a></li>
+                <li><a href="/cs/sablony-webove-stranky">CS</a></li>
+                <li><a href="/sv/webbplatsmallar">SV</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/Editor/Account/LogOn" rel="nofollow">Войти</a></li>
+            <li class="divider-vertical"></li>
+            <li><a href="{% url 'user:sign_up' %}" rel="nofollow">Зарегистрироваться</a></li>
+            <li class="divider-vertical"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
