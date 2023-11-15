@@ -500,7 +500,11 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
                 options.messages['uniqueemailcheck'] = options.message;
             });
     </script>
-   
+
+
+
+
+        
 
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function () {
@@ -510,13 +514,11 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
             });
         </script>
 
-
-
 <form action="" class="shaped-form-extended account-form web-account-form" id="register-form" method='POST'>
     {% csrf_token %}  
     <div class="shaped-form-extended-block">
         <div class="shaped-form-extended-block-caption">
-            <h3>Зарегистрируйся и делись новостями вместе с нами</h3>
+            <h3>Войти в аккаунт</h3>
         </div>
         <div class="shaped-form-extended-block-content">
             {% if form.errors %}
@@ -525,33 +527,26 @@ var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSet
             </div>
             {% endif %}
             <div class="form-group">
-                <input autocomplete="off" class="form-control" data-val="true" 
-                data-val-regex="username" 
-                data-val-regex-pattern="^[a-zA-Z0-9]*$" 
-                data-val-required="The username field is required" 
-                id="username" name="username" 
-                placeholder="Никнейм" type="text" value="" />
-                <div><span class="field-validation-valid" data-valmsg-for="username" data-valmsg-replace="true"></span></div>
-            </div>
-            <div class="form-group">
                 <input autocomplete="off" class="form-control" data-val="true" data-val-email="Enter a valid email address" data-val-regex="Enter a valid email address" data-val-regex-pattern="^[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*(\+[_A-Za-z0-9-]+)?@[\w-]+(\.[\w-]+)*(\.[\w]{2,})$" data-val-required="The Email Address field is required" id="email" name="email" placeholder="Почта" type="text" value="" />
                 <div><span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span></div>
             </div>
             <div class="form-group">
-                <input autocomplete="off" class="form-control" data-val="true" data-val-length="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-length-max="200" data-val-length-min="6" data-val-passwordregexcheck="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-passwordregexcheck-pattern="[\W\d]{1}" data-val-required="The Password field is required" id="password1" name="password1" placeholder="Пароль" type="password" />
-                <div><span class="field-validation-valid" data-valmsg-for="password1" data-valmsg-replace="true"></span></div>
-            </div>
-            <div class="form-group">
-                <input autocomplete="off" class="form-control" data-val="true" data-val-length="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-length-max="200" data-val-length-min="6" data-val-passwordregexcheck="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-passwordregexcheck-pattern="[\W\d]{1}" data-val-required="The Password field is required" id="password2" name="password2" placeholder="Пароль еще разок на всякий" type="password" />
-                <div><span class="field-validation-valid" data-valmsg-for="password2" data-valmsg-replace="true"></span></div>
+                <input autocomplete="off" class="form-control" data-val="true" data-val-length="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-length-max="200" data-val-length-min="6" data-val-passwordregexcheck="Passwords must be at least 6 characters long containing at least one numeric or special character." data-val-passwordregexcheck-pattern="[\W\d]{1}" data-val-required="The Password field is required" id="password" name="password" placeholder="Пароль" type="password" />
+                <div><span class="field-validation-valid" data-valmsg-for="password" data-valmsg-replace="true"></span></div>
             </div>
             
             <div class="form-group">
-                <button type="submit" class="default-button" id="registerbutton">Зарегаться</button>
+                <button type="submit" class="default-button" id="login">Войти</button>
                 <div class="form-btn-link" style="margin-left: 15px; display: inline-block;">
-    <a class="dialog-link" href="{% url 'user:login' %}" rel="nofollow">Уже есть аккаунт?</a>
+    <a class="dialog-link" href="" rel="nofollow">Нет аккаунта? Жми сюда</a>
                 </div>
             </div>
             <br />
     </div>
 </form>
+
+<!-- <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit"> Зарегаться </button>
+</form> -->

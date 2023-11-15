@@ -58,10 +58,16 @@
                 <li><a href="/sv/webbplatsmallar">SV</a></li>
               </ul>
             </li>
-
-            <li><a href="/Editor/Account/LogOn" rel="nofollow">Войти</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'user:logout' %}" rel="nofollow">Выйти</a></li>
+            {% else %}
+            <li><a href="{% url 'user:login' %}" rel="nofollow">Войти</a></li>
+            {% endif %}
             <li class="divider-vertical"></li>
+            {% if user.is_authenticated %}
+            {% else %}
             <li><a href="{% url 'user:sign_up' %}" rel="nofollow">Зарегистрироваться</a></li>
+            {% endif %}
             <li class="divider-vertical"></li>
           </ul>
         </div>
